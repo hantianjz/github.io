@@ -1,0 +1,4 @@
+baseURL = "http://hackjumpzero.ca/"
+languageCode = "en-us"
+title = "HJZ's Online Space"
+theme = "hello-friend-ng"
