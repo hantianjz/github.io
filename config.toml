@@ -1,0 +1,9 @@
+baseURL = "http://hackjumpzero.ca/"
+languageCode = "en-us"
+title = "HJZ's Space"
+theme = "hello-friend-ng"
+
+[[menu.main]]
+  identifier = "blog"
+  name       = "Blog"
+  url        = "/posts"
