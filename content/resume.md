@@ -3,7 +3,7 @@ title: "My resume"
 date: 2021-09-28T21:33:00-04:00
 draft: false
 ---
-
+______
 # Past employments
 
 ### Verily Life Sciences|*Senior Firmware Engineer / Tech Lead*
@@ -40,6 +40,3 @@ draft: false
 - Designed and developed Trustzone secure OS build flow within Android
 - Work with **OpenOCD**, open source project, to bring a kernel debugger compatible with Tegra 3 devices
 
-______
-
-# Projects
