@@ -43,7 +43,7 @@ disableHugoGeneratorInject = false
 
 [params]
   enableThemeToggle = true
-  homeSubtitle = "He who push electrons"
+  homeSubtitle = "Embedded Software Engineer who push electrons"
 
   [params.logo]
     logoMark     = "$"
@@ -96,3 +96,8 @@ disableHugoGeneratorInject = false
     identifier = "notes"
     name       = "Notes"
     url        = "https://notes.hackjumpzero.ca/"
+
+  [[menu.main]]
+    identifier = "resume"
+    name       = "Resume"
+    url        = "/resume/"
