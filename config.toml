@@ -3,20 +3,43 @@ languageCode = "en-us"
 title = "HJZ"
 theme = "hello-friend-ng"
 
-[[menu.main]]
-  identifier = "about"
-  name       = "About"
-  url        = "/about/"
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
 
-[[menu.main]]
-  identifier = "blog"
-  name       = "Blog"
-  url        = "/posts/"
+paginate  = 10
+rssLimit  = 10  # Maximum number of items in the RSS feed.
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
 
-[[menu.main]]
-  identifier = "notes"
-  name       = "Notes"
-  url        = "https://notes.hackjumpzero.ca/"
+# googleAnalytics = ""
+# disqusShortname = ""
+
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "."
+
+buildDrafts  = false
+buildFuture  = false
+buildExpired = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+  series   = "series"
 
 [params]
   enableThemeToggle = true
@@ -57,3 +80,19 @@ theme = "hello-friend-ng"
   [[params.social]]
     name = "linkedin"
     url  = "https://www.linkedin.com/in/jamzhao/"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/about/"
+
+  [[menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/posts/"
+
+  [[menu.main]]
+    identifier = "notes"
+    name       = "Notes"
+    url        = "https://notes.hackjumpzero.ca/"
