@@ -1,6 +1,6 @@
 baseURL = "https://hackjumpzero.ca/"
 languageCode = "en-us"
-title = "HJZ's Space"
+title = "HJZ"
 theme = "hello-friend-ng"
 
 [[menu.main]]
@@ -17,3 +17,43 @@ theme = "hello-friend-ng"
   identifier = "notes"
   name       = "Notes"
   url        = "https://notes.hackjumpzero.ca/"
+
+[params]
+  enableThemeToggle = true
+  homeSubtitle = "He who push electrons"
+
+  [params.logo]
+    logoMark     = "$"
+    logoText     = " ~/hjz"
+    logoHomeLink = "/"
+
+    # Set true to remove the logo cursor entirely.
+    logoCursorDisabled = false
+
+    # Set to a valid CSS color to change the cursor in the logo.
+    logoCursorColor    = "#39ff14"
+
+    # Set to a valid CSS time value to change the animation duration, "0s" to disable.
+    logoCursorAnimate  = "5s"
+
+  [params.portrait]
+    path     = "/img/profile.png"
+    alt      = "Portrait"
+    maxWidth = "180px"
+
+  # Social icons
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/oahzjh"
+
+  [[params.social]]
+    name = "email"
+    url  = "mailto:hjz@hackjumpzero.ca"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/hantianjz"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/jamzhao/"
