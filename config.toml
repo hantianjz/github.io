@@ -43,8 +43,8 @@ disableHugoGeneratorInject = false
 [params]
   enableThemeToggle = true
   homeSubtitle = "Embedded Software Engineer who push electrons"
-  enableSharingButtons = true
-  enableGlobalLanguageMenu = true
+  enableSharingButtons = false
+  enableGlobalLanguageMenu = false
 
   [params.logo]
     logoMark     = "$"
