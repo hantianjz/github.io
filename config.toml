@@ -43,6 +43,8 @@ disableHugoGeneratorInject = false
 [params]
   enableThemeToggle = true
   homeSubtitle = "Embedded Software Engineer who push electrons"
+  enableSharingButtons = true
+  enableGlobalLanguageMenu = true
 
   [params.logo]
     logoMark     = "$"
@@ -79,6 +81,15 @@ disableHugoGeneratorInject = false
   [[params.social]]
     name = "linkedin"
     url  = "https://www.linkedin.com/in/jamzhao/"
+
+[languages]
+  [languages.en]
+    subtitle  = "Hello Friend NG Theme"
+    weight    = 1
+
+  [languages.zh-cn]
+    subtitle  = "Hello Friend NG Theme"
+    weight    = 2
 
 [menu]
   [[menu.main]]
