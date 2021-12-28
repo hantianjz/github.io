@@ -84,11 +84,11 @@ disableHugoGeneratorInject = false
 
 [languages]
   [languages.en]
-    subtitle  = "Hello Friend NG Theme"
+    subtitle  = ""
     weight    = 1
 
   [languages.zh-cn]
-    subtitle  = "Hello Friend NG Theme"
+    subtitle  = ""
     weight    = 2
 
 [menu]
