@@ -106,3 +106,8 @@ disableHugoGeneratorInject = false
     identifier = "resume"
     name       = "Resume"
     url        = "/resume/"
+
+  [[menu.main]]
+    identifier = "photography"
+    name       = "Photography"
+    url        = "https://jamzhao.myportfolio.com/"
