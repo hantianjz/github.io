@@ -83,11 +83,11 @@ disableHugoGeneratorInject = false
     url  = "https://www.linkedin.com/in/jamzhao/"
 
 [languages]
-  [languages.en]
+  [languages.en.params]
     subtitle  = ""
     weight    = 1
 
-  [languages.zh-cn]
+  [languages.zh-cn.params]
     subtitle  = ""
     weight    = 2
 
