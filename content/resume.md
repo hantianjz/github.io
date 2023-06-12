@@ -6,6 +6,12 @@ draft: false
 ______
 # Past employments
 
+### [Google Geo Sustainability](https://www.sidewalklabs.com/products/pebble)|*Senior Software Engineer*
+- LTE modem product bring up, integration, field deployment for protoype studies in 10+ sites over US
+- Redesigned and migrated FW project to GN build system, improve build time and eliminate flakly builds
+- Implemented python host tools framework for developers and field ops' speeding up daily operations
+- Automating github CI framework with on device HW test
+
 ### [Verily Life Sciences](https://verily.com/)|*Senior Firmware Engineer / Tech Lead*
 - Firmware Lead of [Verily Patch](https://verily.com/solutions/verily-patch/) **Class 1 med device**, taking it from start to pilot
 - Drove product **Bluetooth SIG** certification and **FDA 510K** certification
