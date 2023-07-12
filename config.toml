@@ -67,10 +67,6 @@ disableHugoGeneratorInject = false
 
   # Social icons
   [[params.social]]
-    name = "twitter"
-    url  = "https://twitter.com/oahzjh"
-
-  [[params.social]]
     name = "email"
     url  = "mailto:hjz@hackjumpzero.ca"
 
