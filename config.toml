@@ -94,11 +94,6 @@ disableHugoGeneratorInject = false
     url        = "/about/"
 
   [[menu.main]]
-    identifier = "notes"
-    name       = "Notes"
-    url        = "https://notes.hackjumpzero.ca/"
-
-  [[menu.main]]
     identifier = "resume"
     name       = "Resume"
     url        = "/resume/"
