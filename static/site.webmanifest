@@ -1,0 +1,15 @@
+{
+  "name": "HJZ Personal page",
+  "short_name": "HJZ",
+  "start_url": "/posts",
+  "icons": [
+    {
+      "src": "/img/profile.png",
+      "sizes": "398×398",
+      "type": "image/png"
+    },
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
