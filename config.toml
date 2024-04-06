@@ -42,9 +42,17 @@ disableHugoGeneratorInject = false
 
 [params]
   enableThemeToggle = true
+  description = "Nice theme for homepages and blogs"
   homeSubtitle = "Embedded Software Engineer who push electrons"
   enableSharingButtons = false
   enableGlobalLanguageMenu = false
+
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  justifyContent = false  # Set "text-align: justify" to .post-content.
 
   [params.logo]
     logoMark     = "$"
@@ -92,6 +100,11 @@ disableHugoGeneratorInject = false
     identifier = "about"
     name       = "About"
     url        = "/about/"
+
+  [[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
+    url        = "/posts/"
 
   [[menu.main]]
     identifier = "resume"
