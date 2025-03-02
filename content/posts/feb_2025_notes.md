@@ -4,12 +4,12 @@ date: 2025-02-28
 img:
 ---
 
-# Git performance tracing
+### Git performance tracing
 
 I noticed some git command was taking exceedingly long, especially git status that I type very often. And it is tied on my cmd prompt so my command prompt is also slow now.
 Using `GIT_TRACE=1` allows one to examine what git is doing. Turns out my problem was the repo I was working in using too many sub modules and git status had to be run on all individual submodules, which took some time.
 
-```
+```bash
 $ GIT_TRACE=1 git status
 14:40:25.548035 git.c:476               trace: built-in: git status
 14:40:25.550695 run-command.c:667       trace: run_command: cd themes/hello-friend-ng; unset GIT_PREFIX; GIT_DIR=.git git status --porcelain=2
@@ -24,10 +24,10 @@ Your branch is up to date with 'origin/main'.
 ...
 ```
 
-# Fish shell performance tracing
+### Fish shell performance tracing
 
 Along the same line fish shell also have a profiling feature
-```
+```bash
        -p or --profile=PROFILE_FILE
               when fish exits, output timing information on all executed commands to the specified file.  This excludes time spent starting up and reading the configuration.
 
@@ -37,7 +37,7 @@ Along the same line fish shell also have a profiling feature
 
 and you get a profile file like:
 
-```
+```bash
 Time    Sum     Command
 115     10404135        > __fish_print_help fish
 435     437     -> source /opt/homebrew/Cellar/fish/4.0.0/share/fish/functions/__fish_print_help.fish
@@ -51,7 +51,7 @@ Time    Sum     Command
 1       72      -> if test -n "$COLUMNS"...
 ```
 
-# [Avante.nvim](https://github.com/yetone/avante.nvim)
+### [Avante.nvim](https://github.com/yetone/avante.nvim)
 I started using with copilot and the result was surprisingly good. Needed to NOT use the rag service as that actually spins up a docker container locally and really drains a ton of resources.
 
 Which unsurprisingly it was pretty much perfect as aid tool for working through [rustlings](https://github.com/rust-lang/rustlings) problems, the suggested answer was correct 9/10 times. And pair it with the rust-lsp with clippy, I was able to get through the rustlings problems in a weekend.
