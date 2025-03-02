@@ -56,5 +56,5 @@ I started using with copilot and the result was surprisingly good. Needed to NOT
 
 Which unsurprisingly it was pretty much perfect as aid tool for working through [rustlings](https://github.com/rust-lang/rustlings) problems, the suggested answer was correct 9/10 times. And pair it with the rust-lsp with clippy, I was able to get through the rustlings problems in a weekend.
 
-Overall very pleased with the setup right now.
+This seems to be very close to the Cursor AI, experience. Overall very pleased with the setup right now.
 
