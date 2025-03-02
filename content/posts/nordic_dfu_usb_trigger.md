@@ -5,8 +5,6 @@ img:
 ---
 
 
-
-
 The [NRF5280 dongle](https://www.nordicsemi.com/Software-and-Tools/Development-Kits/nRF52840-Dongle) is a great embedded development platform, especially for hobbyist project or quick prototyping. There is also a very similar product from [Make Diary](https://wiki.makerdiary.com/nrf52840-mdk-usb-dongle/programming/) with slightly different PCBA layout. It is generally a decent utility tool for BLE related work. These functionality can all be done out of box with the nrf desktop tool without doing any programming.
 
 There are plenty of blog post on this already that covers introductory programming with the nordic part.
