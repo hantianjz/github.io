@@ -8,5 +8,8 @@
 ## Updating Hugo version
 Update Hugo version arg in the .github/workflows/hugo.yml
 
+run:
+`$ hugo build`
+
 ## Adding new entry
 
