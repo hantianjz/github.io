@@ -6,8 +6,7 @@ img:
 
 ### Git performance tracing
 
-I noticed some git command was taking exceedingly long, especially git status that I type very often. And it is tied on my cmd prompt so my command prompt is also slow now.
-Using `GIT_TRACE=1` allows one to examine what git is doing. Turns out my problem was the repo I was working in using too many sub modules and git status had to be run on all individual submodules, which took some time.
+I noticed that some git commands, especially `git status`, were taking a long time to execute. Since it's tied to my command prompt, this also slowed down my prompt. By using `GIT_TRACE=1`, I could see what git was doing. The issue was that the repository had too many submodules, causing `git status` to run on each one, which took time.
 
 ```bash
 $ GIT_TRACE=1 git status
@@ -26,7 +25,8 @@ Your branch is up to date with 'origin/main'.
 
 ### Fish shell performance tracing
 
-Along the same line fish shell also have a profiling feature
+Similarly, the fish shell has a profiling feature:
+
 ```bash
        -p or --profile=PROFILE_FILE
               when fish exits, output timing information on all executed commands to the specified file.  This excludes time spent starting up and reading the configuration.
@@ -35,7 +35,7 @@ Along the same line fish shell also have a profiling feature
               Will write timing for fish startup to specified file.
 ```
 
-and you get a profile file like:
+The profile file looks like this:
 
 ```bash
 Time    Sum     Command
@@ -52,9 +52,9 @@ Time    Sum     Command
 ```
 
 ### [Avante.nvim](https://github.com/yetone/avante.nvim)
-I started using with copilot and the result was surprisingly good. Needed to NOT use the rag service as that actually spins up a docker container locally and really drains a ton of resources.
+I started using Avante.nvim with Copilot, and the results were surprisingly good. I avoided using the RAG service because it spins up a local Docker container, which drains resources.
 
-Which unsurprisingly it was pretty much perfect as aid tool for working through [rustlings](https://github.com/rust-lang/rustlings) problems, the suggested answer was correct 9/10 times. And pair it with the rust-lsp with clippy, I was able to get through the rustlings problems in a weekend.
+This setup was nearly perfect for working through [rustlings](https://github.com/rust-lang/rustlings) problems. The suggested answers were correct 9 out of 10 times. Paired with rust-lsp and Clippy, I completed the rustlings problems in a weekend.
 
-This seems to be very close to the Cursor AI, experience. Overall very pleased with the setup right now.
+This experience is very similar to using Cursor AI. Overall, I'm very pleased with the setup.
 
