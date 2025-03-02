@@ -3,5 +3,10 @@
 # Status
 [![Hugo build github pages](https://github.com/hantianjz/github.io/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/hantianjz/github.io/actions/workflows/gh-pages.yml)
 
-# 2023-02-13
-- Bump build
+# Workflows
+
+## Updating Hugo version
+Update Hugo version arg in the .github/workflows/hugo.yml
+
+## Adding new entry
+
