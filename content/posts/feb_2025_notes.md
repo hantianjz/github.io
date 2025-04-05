@@ -50,11 +50,3 @@ Time    Sum     Command
 0       0       -> set -l cols
 1       72      -> if test -n "$COLUMNS"...
 ```
-
-### [Avante.nvim](https://github.com/yetone/avante.nvim)
-I started using Avante.nvim with Copilot, and the results were surprisingly good. I avoided using the RAG service because it spins up a local Docker container, which drains resources.
-
-This setup was nearly perfect for working through [rustlings](https://github.com/rust-lang/rustlings) problems. The suggested answers were correct 9 out of 10 times. Paired with rust-lsp and Clippy, I completed the rustlings problems in a weekend.
-
-This experience is very similar to using Cursor AI. Overall, I'm very pleased with the setup.
-
