@@ -11,27 +11,26 @@ Upon power-on reset, the Cortex-M processor's initial actions involve accessing 
 
 While the vector table is initially at **0x00000000**, its location can be changed by writing to the Vector Table Offset Register **(VTOR)**. This allows for relocating the vector table to a different memory location, such as SRAM, for performance optimization or to enable dynamic changes. When setting the offset in the VTOR, the table base must be aligned based on the number of exceptions supported, with a minimum alignment of 32 words (128 bytes) for up to 16 interrupts. For a larger number of interrupts, the alignment must be to the next power of two in terms of the number of words required.
 
+![Cortex M Reset vector table](/img/Cortex_M_Reset_vector_table.png)
 
-![Cortex M Reset vector table](/img/Cortex M Reset vector table.png)
-
-![Cortex M Reset action](/img/Cortex M Reset action.png)
+![Cortex M Reset action](/img/Cortex_M_Reset_action.png)
 [ddi0337e_cortex_m3_r1p1_trm](https://www.keil.com/dd/docs/datashts/arm/cortex_m3/r1p1/ddi0337e_cortex_m3_r1p1_trm.pdf) (Section 5.9 Resets)
 
-![Arm Cortex M Vector Table Array](/img/Arm Cortex M Vector Table Array.png)
+![Arm Cortex M Vector Table Array](/img/Arm_Cortex_M-Vector_Table-Array.png)
 [DUI0553.pdf](https://documentation-service.arm.com/static/5f2ac4ab60a93e65927bbdbf) (Section 2.3.4 Vector Table)
 
-![Cortex v7m Reset behaviour](/img/Cortex v7m Reset behaviour.png)
+![Cortex v7m Reset behaviour](/img/Cortex_v7m_Reset_behaviour.png)
 [DDI0403D_arm_architecture_v7m_reference_manual](https://www.pjrc.com/teensy/beta/DDI0403D_arm_architecture_v7m_reference_manual.pdf) (Section B1.5.5 Reset behaviour)
 
-
 One special thing with vector table is that, the final compiled vector handler addresses are not power of two. This is because the bit[0] of these reset handlers are used for setting the `EPSR.T` bit on exception handlings.
-![Reset vector EPSRT bit](/img/Reset vector EPSRT bit.png)
+![Reset vector EPSRT bit](/img/Reset_vector_EPSRT_bit.png)
 [DDI0403D_arm_architecture_v7m_reference_manual](https://www.pjrc.com/teensy/beta/DDI0403D_arm_architecture_v7m_reference_manual.pdf) (Section B1.5.3 Vector table)
 
 This kind of bring up the question what is the ESPR register?
-![Arm v7m xPSR](/img/Arm v7m xPSR.png)
+![Arm v7m xPSR](/img/Arm_v7m_xPSR.png)
+
 Okay so it is the thumb state, but why does the reset need to enable thumb instructions.
-![Cortex M thumb](/img/Cortex M thumb.png)
+![Cortex M thumb](/img/Cortex_M_thumb.png)
 [DDI0403D_arm_architecture_v7m_reference_manual](https://www.pjrc.com/teensy/beta/DDI0403D_arm_architecture_v7m_reference_manual.pdf) (Section B1.4.2 The special-purpose program status registers, xPSR)
 
 Okay, this is actually news to me!
