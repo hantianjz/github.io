@@ -16,7 +16,7 @@ While the vector table is initially at **0x00000000**, its location can be chang
 ![Cortex M Reset action](/img/Cortex_M_Reset_action.png)
 [ddi0337e_cortex_m3_r1p1_trm](https://www.keil.com/dd/docs/datashts/arm/cortex_m3/r1p1/ddi0337e_cortex_m3_r1p1_trm.pdf) (Section 5.9 Resets)
 
-![Arm Cortex M Vector Table Array](/img/Arm_Cortex_M-Vector_Table-Array.png)
+![Arm Cortex M Vector Table Array](/img/Arm_Cortex_M-Vector_Table_Array.png)
 [DUI0553.pdf](https://documentation-service.arm.com/static/5f2ac4ab60a93e65927bbdbf) (Section 2.3.4 Vector Table)
 
 ![Cortex v7m Reset behaviour](/img/Cortex_v7m_Reset_behaviour.png)
